@@ -10,5 +10,8 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin()
+  ],
+  rules: [
+    { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
   ]
 };
