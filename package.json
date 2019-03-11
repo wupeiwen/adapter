@@ -1,6 +1,6 @@
 {
   "name": "adapter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Configuration adapter for visual charts",
   "main": "dist/adapter.js",
   "scripts": {
