@@ -6,12 +6,16 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'adapter.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    library: 'Adapter',
+    libraryTarget: 'umd'
   },
   plugins: [
     new CleanWebpackPlugin()
   ],
-  rules: [
-    { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-  ]
+  module: {
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+    ]
+  }
 };
