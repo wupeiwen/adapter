@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
+  <div id="main" style="width:600px;height:600px;"></div>
+  <script src="./echarts.js"></script>
   <script src="../dist/adapter.js"></script>
   <script type="text/javascript">
-    console.log(adapter)
+    let dataset = { dimensions: ['姓名', '数值'], source: [{ 姓名: 'test', 数值: 123 }, { 姓名: 'admin', 数值: 456 }, { 姓名: 'liu', 数值: 200 }] }
+    let option = {}
+    let myChart = echarts.init(document.getElementById('main'))
+    myChart.setOption(new Adapter.echarts('scatter', dataset, option))
   </script>
 </body>
+
 </html>
