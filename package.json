@@ -2,7 +2,7 @@
   "name": "adapter",
   "version": "0.0.1",
   "description": "Configuration adapter for visual charts",
-  "main": "src/index.js",
+  "main": "dist/adapter.js",
   "scripts": {
     "build": "webpack"
   },
