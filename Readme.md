@@ -1,7 +1,11 @@
+![](https://travis-ci.com/wupeiwen/adapter.svg?branch=master)
+[![](https://img.shields.io/npm/v/adapter-vis.svg)](https://www.npmjs.com/package/adapter-vis)
+![](https://img.shields.io/bundlephobia/min/vadapter-vis.svg)
+![](https://img.shields.io/npm/dt/adapter-vis.svg)
 ## 为什么做
 在使用echarts、g2等可视化类库，实现可视化图表时，需要针对需求调整很多配置项、对接各式各样的业务数据。这个过程中会有一些处理工作，例如数据字段适配、配置项调整。这些工作比较繁琐，遇到需求频繁变更时，会给开发人员带来不少的麻烦。基于上述场景诞生了adapter，它被定义为一个前置的处理模块，来解决这部分繁琐的工作，让可视化实现更为简单、快速。
-## 做成了什么样子
-> 目前的0.1.0版本，按照实现的效果来看，更像是一个echarts可视化图表配置的生成器
+## 实现说明
+> 目前的0.1.0版本，按照实现的效果来看，当前版本更像是一个echarts的配置生成器
 ### 引入依赖
 ```
   <script src="../dist/adapter.js"></script>
