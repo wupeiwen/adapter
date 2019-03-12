@@ -1,18 +1,32 @@
 {
-  "name": "adapter",
-  "version": "0.0.1",
-  "description": "Configuration adapter for visual charts",
-  "main": "index.js",
+  "name": "adapter-vis",
+  "version": "0.1.0",
+  "description": "Configuration adapter for Visualization",
+  "main": "dist/adapter.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/wupeiwen/adapter"
   },
   "keywords": [
-    "adapter"
+    "adapter",
+    "echarts",
+    "@antv/g2"
   ],
-  "author": "peiwen <Javapeiwen2010@gmail.com>",
-  "license": "Apache-2.0"
+  "author": {
+    "name": "wupeiwen",
+    "email" : "javapeiwen2010@gmail.com",
+    "url" : "https://wupeiwen.github.io"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
 }
