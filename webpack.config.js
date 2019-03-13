@@ -2,7 +2,7 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'none',
   entry: './src/index.js',
   output: {
     filename: 'adapter.js',
@@ -15,7 +15,16 @@ module.exports = {
   ],
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            babelrc: true
+          }
+        }
+      }
     ]
   }
 };
